@@ -6,7 +6,7 @@ RUN apt -y update && apt install -y wget && apt -y install nginx
 RUN wget https://playsdev.com/ 
  #COPY index.html  /var/www/html/index.html 
 
-EXPOSE 80
+EXPOSE 81
 
 
 CMD ["nginx", "-g", "daemon off;"]
