@@ -6,7 +6,7 @@ RUN apt -y update && apt install -y wget && apt -y install nginx
 RUN wget https://playsdev.com/ 
  #COPY index.html  /var/www/html/index.html 
 RUN cp index.html /var/www/html/index.html
-#COPY default /etc/nginx/sites-available/default
+COPY default /etc/nginx/sites-available/default
 EXPOSE 81
 
 
